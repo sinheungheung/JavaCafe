@@ -3,22 +3,22 @@ package My_Cafe;
 import java.util.Scanner;
 
 class MyCafe{
-	private static int totalCount = 0; // °øÀ¯µÇ´Â ÇÊµå
-	private int count = 0; // °´Ã¼¸¶´Ù °¡Áö°í ÀÖ´Â ÇÊµå
+	private static int totalCount = 0; // ê³µìœ ë˜ëŠ” í•„ë“œ
+	private int count = 0; // ê°ì²´ë§ˆë‹¤ ê°€ì§€ê³  ìˆëŠ” í•„ë“œ
 	
 	private String cafeName = "JAVA";
 	public String nickName ;
 	
 	public MyCafe(String nickName) {
 		this.nickName = nickName;
-		System.out.println(cafeName + "Ä«Æä¿¡ ¹æ¹®ÇÏ¿´½À´Ï´Ù.");
+		System.out.println(cafeName + "ì¹´í˜ì— ë°©ë¬¸í•˜ì˜€ìŠµë‹ˆë‹¤.");
 		
 		totalCount++;
 		count++;
 	}
 	public void disp() {
-		System.out.println("¿ì¸®±îÆä ÀüÃ¼ ¹æ¹®ÀÚ ¼ö´Â: "+totalCount+"ÀÔ´Ï´Ù.");
-		System.out.println(nickName+"´ÔÀÇ ¹æ¹® È½¼ö´Â: "+count+"ÀÔ´Ï´Ù.");
+		System.out.println("ìš°ë¦¬ì¹´í˜ ì „ì²´ ë°©ë¬¸ì ìˆ˜ëŠ”: "+totalCount+"ì…ë‹ˆë‹¤.");
+		System.out.println(nickName+"ë‹˜ì˜ ë°©ë¬¸ íšŸìˆ˜ëŠ”: "+count+"ì…ë‹ˆë‹¤.");
 	}
 }
 public class Cafe {
@@ -26,15 +26,15 @@ public class Cafe {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("ÀÚ¹Ù Ä«Æä¿¡ ¹æ¹®ÇÕ´Ï´Ù.");
-		System.out.print("´Ğ³×ÀÓÀ» ÀÔ·Â: ");
+		System.out.println("ìë°” ì¹´í˜ì— ë°©ë¬¸í•©ë‹ˆë‹¤.");
+		System.out.print("ë‹‰ë„¤ì„ì„ ì…ë ¥: ");
 		String nickName = scan.next();
 		
 		MyCafe cafe = new MyCafe(nickName);
 		
 		cafe.disp();
-		System.out.println("»õ·Î¿î ¾ÆÀÌµğ·Î ·Î±×ÀÎ Çß½À´Ï´Ù.");
-		System.out.print("´Ğ³×ÀÓ ÀÔ·Â: ");
+		System.out.println("ìƒˆë¡œìš´ ì•„ì´ë””ë¡œ ë¡œê·¸ì¸ í–ˆìŠµë‹ˆë‹¤.");
+		System.out.print("ë‹‰ë„¤ì„ ì…ë ¥: ");
 		String nickName2 = scan.next();
 		
 		MyCafe Cafe2 = new MyCafe(nickName2);
